@@ -1,0 +1,104 @@
+/* style001.css */
+
+body
+{
+    background-color: rgb(30, 30, 30);
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+}
+
+button
+{
+    margin: 1px;
+    padding: 9px;
+    border: solid 1px rgb(100, 100, 100);
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: arial;
+    font-size: 14.5px;
+    font-weight: bold;
+    color: rgb(247, 247, 247);
+    text-indent: 0px;
+    text-align: center;
+    line-height: 0px;
+    display: inline-block;
+}
+
+button:hover
+{
+    border-color: rgb(255, 255, 255);
+    background: rgb(0, 217, 255);
+    cursor: pointer;
+}
+
+button:active
+{
+    position: relative;
+    top: 1px;
+    border-color: rgb(255, 0, 255);
+    color: rgb(255, 0, 255);
+}
+
+input
+{
+    border: solid 1px rgb(100, 100, 100);
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#theTextInput
+{
+    width: 60%;
+    height: 340px;
+    border: solid 1px rgb(100, 100, 100);
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#output
+{
+    position: absolute;
+    right: 0px;
+    top: 70px;
+    width: 39%;
+    height: 350px;
+    border: solid 1px rgb(100, 100, 100);
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.test
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*----*/
+
+/* Dedicated to God the Father */
+/* All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025 */
+/* https://github.com/ChristopherTopalian */
+/* https://github.com/ChristopherAndrewTopalian */
+/* https://sites.google.com/view/CollegeOfScripting */
+
