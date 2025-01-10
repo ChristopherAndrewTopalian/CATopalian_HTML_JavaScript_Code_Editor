@@ -35,14 +35,14 @@ function playTone(frequency, duration, waveType, volume, detune, attackTime, rel
 function hoverSound()
 {
     playTone(
-        300,     // frequency
-        500,     // duration
+        400,     // frequency
+        200,     // duration
         'sine',  // waveType
-        0.2,      // volume
-        50,       // detune
-        0.2,      // attackTime
-        0.2,      // releaseTime
-        -0.5      // panValue -0.5 is left
+        0.1,      // volume
+        0,       // detune
+        0.1,      // attackTime
+        0.1,      // releaseTime
+        0.0      // panValue -0.5 is left
     );
 }
 
@@ -50,13 +50,27 @@ function clickSound()
 {
     playTone(
         400,     // frequency
-        500,     // duration
-        'sine',  // waveType
+        400,     // duration
+        'triangle',  // waveType
         0.2,      // volume
         50,       // detune
-        0.2,      // attackTime
+        0.1,      // attackTime
         0.2,      // releaseTime
-        -0.5      // panValue -0.5 is left
+        0.0      // panValue -0.5 is left
+    );
+}
+
+function clickSound2()
+{
+    playTone(
+        500,     // frequency
+        100,     // duration
+        'triangle',  // waveType
+        0.1,      // volume
+        0.0,       // detune
+        0.1,      // attackTime
+        0.1,      // releaseTime
+        0      // panValue -0.5 is left
     );
 }
 

@@ -22,8 +22,14 @@ function makeInterface()
 
     let saveButton = ce('button');
     saveButton.textContent = 'SAVE';
+    saveButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     saveButton.onclick = function()
     {
+        clickSound();
+
         let content = theTextInput.value;
 
         saveTextFile(content, fileNameInput.value);
@@ -36,6 +42,18 @@ function makeInterface()
     fileNameInput.type = 'text';
     fileNameInput.id = 'fileNameInput';
     fileNameInput.value = 'Untitled';
+    fileNameInput.onmouseover = function()
+    {
+        hoverSound();
+    };
+    fileNameInput.oninput = function()
+    {
+        clickSound();
+    };
+    fileNameInput.onclick = function()
+    {
+        clickSound2();
+    };
     saveContainer.append(fileNameInput);
 
     //-//
@@ -65,6 +83,8 @@ function makeInterface()
     fontSizeInput.style.width = 70 + 'px';
     fontSizeInput.oninput = function()
     {
+        clickSound2();
+
         theTextInput.style.fontSize = fontSizeInput.value;
     };
     fontContainer.append(fontSizeInput);
@@ -73,8 +93,14 @@ function makeInterface()
 
     let runButton = ce('button');
     runButton.textContent = 'Run';
+    runButton.onmouseover = function()
+    {
+        hoverSound();
+    };
     runButton.onclick = function()
     {
+        clickSound();
+
         ge('output').innerHTML = eval(ge('theTextInput').value);
     };
     fontContainer.append(runButton);
