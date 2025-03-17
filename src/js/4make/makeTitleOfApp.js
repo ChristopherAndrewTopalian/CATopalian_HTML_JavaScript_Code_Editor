@@ -13,8 +13,8 @@ function makeTitleOfApp()
 
     let titleOfApp = ce('a');
     titleOfApp.id = 'titleOfApp';
-    titleOfApp.textContent = 'Topalian HTML JavaScript Code Editor';
-    titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian';
+    titleOfApp.textContent = 'CATopalian HTML JavaScript Code Editor';
+    titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_HTML_JavaScript_Code_Editor';
     titleOfApp.target = '_blank';
     titleOfApp.style.fontSize = '17px';
     titleOfApp.style.fontWeight = 'bold';
