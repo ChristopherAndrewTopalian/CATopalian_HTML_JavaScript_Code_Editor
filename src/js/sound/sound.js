@@ -35,10 +35,10 @@ function playTone(frequency, duration, waveType, volume, detune, attackTime, rel
 function hoverSound()
 {
     playTone(
-        400,     // frequency
-        200,     // duration
+        200,     // frequency
+        100,     // duration
         'sine',  // waveType
-        0.1,      // volume
+        0.01,      // volume
         0,       // detune
         0.1,      // attackTime
         0.1,      // releaseTime
@@ -52,7 +52,7 @@ function clickSound()
         400,     // frequency
         400,     // duration
         'triangle',  // waveType
-        0.2,      // volume
+        0.02,      // volume
         50,       // detune
         0.1,      // attackTime
         0.2,      // releaseTime
