@@ -10,7 +10,21 @@ function makeInterface()
 
     let subDiv = ce('div');
     subDiv.id = 'subDiv';
+    subDiv.style.margin = '4px';
     mainDiv.append(subDiv);
+
+    //-//
+
+    let titleOfApp = ce('a');
+    titleOfApp.id = 'titleOfApp';
+    titleOfApp.textContent = 'CATopalian HTML JavaScript Code Editor';
+    titleOfApp.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_HTML_JavaScript_Code_Editor';
+    titleOfApp.target = '_blank';
+    titleOfApp.style.fontSize = '17px';
+    titleOfApp.style.fontWeight = 'bold';
+    titleOfApp.style.textDecoration = 'none';
+    titleOfApp.style.color = 'rgb(100, 100, 100)';
+    subDiv.append(titleOfApp);
 
     //-//
 
@@ -80,7 +94,7 @@ function makeInterface()
     fontSizeInput.type = 'number';
     fontSizeInput.id = 'fontSizeInput';
     fontSizeInput.value = 24;
-    fontSizeInput.style.width = 70 + 'px';
+    fontSizeInput.style.width = '60px';
     fontSizeInput.oninput = function()
     {
         clickSound2();
@@ -128,7 +142,7 @@ function makeInterface()
 //----//
 
 // Dedicated to God the Father
-// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2025
+// All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
