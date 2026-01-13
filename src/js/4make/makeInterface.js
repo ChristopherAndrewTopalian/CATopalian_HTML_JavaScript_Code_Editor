@@ -99,7 +99,7 @@ function makeInterface()
     {
         clickSound2();
 
-        theTextInput.style.fontSize = fontSizeInput.value;
+        theTextInput.style.fontSize = fontSizeInput.value + 'px';
     };
     fontContainer.append(fontSizeInput);
 
